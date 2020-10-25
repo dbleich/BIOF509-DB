@@ -64,6 +64,8 @@ At the command prompt, if you change to that directory, type the following:
 python modelTARGET.py "TARGET-Clinical-All.csv" "clin" "RF"
 ```
 
+If you are using Anaconda, you can type it into that CMD Prompt program or Powershell Prompt instead.
+
 Jupyter Notebook
 -----------------
 
