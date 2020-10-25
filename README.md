@@ -8,7 +8,7 @@ Predicting Survival of Childhood Cancers using TARGET data
 
 The Therapeutical Applicable Research to Generate Effective Treatments (TARGET) program studies childhood cancers
 and has produced datasets containing demographic and clinical data of these patients, including vital status (alive, dead). 
-This pprogram explores whether that data can be used to create a model, using supervised learning, to predict vital status
+This program explores whether that data can be used to create a model, using supervised learning, to predict vital status
 given a set of demographic or clinical features.
 
 Python program -- to be run on command line
