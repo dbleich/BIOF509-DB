@@ -8,8 +8,8 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import MinMaxScaler
 from sklearn import tree #For Decision Tree
-import pydotplus # To create our Decision Tree Graph
-from IPython.display import Image  # To Display a image of our graph
+#import pydotplus # To create our Decision Tree Graph
+#from IPython.display import Image  # To Display a image of our graph
 
 #%matplotlib inline
 
@@ -67,7 +67,7 @@ def create_features_and_labels(df):
     
     return features_df, vital_status_codes
 
-'''Function to encode features - feature set 1'''
+'''Function to encode features - feature set "demog" '''
 def encode_categorical_features1(features_df):
 
     #hot encode each categorical feature
@@ -83,7 +83,7 @@ def encode_categorical_features1(features_df):
     return encoded_feature_df
 
 
-'''Function to encode features - feature set 2'''
+'''Function to encode features - feature set "clin" '''
 def encode_categorical_features2(features_df):
 
     #hot encode each categorical feature
@@ -250,7 +250,7 @@ def modelTARGET(csv, feature_set, model_type):
         print('Success! Random Forest Classification has completed, with Accuracy:')
         print(accuracy)
         print()
-        print('The Confusion Matrix shows the accuracy per label (Alive in top left, Dead in bottom right)')
+        print('The Confusion Matrix shows the accuracy per label (Alive in top left, Dead in bottom right).')
         #Create a confusion matrix of all the labels against all the predictions
         cm = confusion_matrix(all_labels,all_predictions,normalize= 'true')
         #turn it into a dataframe so seaborn will label the graph using the columns/indicies of the dataframe
@@ -265,7 +265,7 @@ def modelTARGET(csv, feature_set, model_type):
         print('Success! Decision Tree Classification has completed, with Accuracy:')
         print(accuracy)
         print()
-        print('The Confusion Matrix shows the accuracy per label (Alive in top left, Dead in bottom right)')
+        print('The Confusion Matrix shows the accuracy per label (Alive in top left, Dead in bottom right).')
         #Create a confusion matrix of all the labels against all the predictions
         cm = confusion_matrix(all_labels,all_predictions,normalize= 'true')
         #turn it into a dataframe so seaborn will label the graph using the columns/indicies of the dataframe
