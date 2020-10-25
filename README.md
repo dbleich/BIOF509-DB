@@ -25,14 +25,11 @@ The following packages need to be installed, if you don't already have them:
 - seaborn
 - matplotlib.pyplot
 - sklearn
+- umap (Note: install umap-learn!)
 
 In addition, for the Jupyter notebook version:
 
-This is only needed for UMAP dimensionality reduction, which is only included in the Jupyter notebook.
-
-- umap (Note: install umap-learn!)
-
-These are only needed if you want for creation and display of the Decision Tree graph, which is only included in the Jupyter notebook.
+These are needed if you want to perform creation and display of the Decision Tree graph.
 
 - pydotplus # To create our Decision Tree Graph
 - IPython.display import Image  # To Display a image of the graph
@@ -85,6 +82,6 @@ Name: TARGETanalysis.ipynb
     b) It includes additional analysis steps, not included in the main program:
     
             - UMAP
-            - feaure importance graphs
+            - feature importance graphs
             - decision tree graphs
 
